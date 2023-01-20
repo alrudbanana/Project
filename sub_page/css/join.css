@@ -1,0 +1,111 @@
+        @font-face {
+          font-family: 'Pretendard-Regular';
+          src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+          font-weight: 400;
+          font-style: normal;
+        }
+
+        a{text-decoration: none;}
+        h2,h3,h4,h5{margin:0;}
+
+        body{
+            margin :0;
+            font-family: 'Pretendard-Regular';
+            font-weight: 800;
+            font-size: 15px;
+            font-size: 1.5em;
+            background-color: rgb(255, 255, 255);
+
+            padding:20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            }
+
+        .login-form{
+            width: 600px;
+            background-color: #fff;
+            padding:30px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px #eee;
+            box-sizing: border-box; /*width 랑 세트로 해서 범위랑 위치 잡아주기*/
+        }
+
+        .login-form h2{
+        font-weight: normal;
+        text-transform: capitalize;
+        font-size: 28px;
+        }
+        .sns-login{
+            margin : 20px 0;
+            display: flex;
+        }
+        .btn{
+            flex:1;
+            padding:5px;
+            border:none;
+            font-family: 'Pretendard-Regular';
+            font-size: 11px;
+            color : #fff;
+            margin-right: 3px;
+            border-radius: 3px;
+
+        }
+            .btn.facebook{
+            background-color: #1877F2;
+        }
+        .btn.twitter{
+            background-color: #1DA1F2;
+        }
+
+        .btn.google{
+            background-color: #ea4335;
+        }
+
+        .field{
+         display: flex;
+         margin: 20px 0;
+         font-size: 16px;
+        }
+        .field label{
+            flex:1;
+            text-transform: capitalize;
+        }
+        .field input{
+            flex:4;
+            border : 1px solid #ddd;
+            padding: 5px;
+            border-radius: 3px;
+
+        }
+
+        .btn-login{
+            font-family: 'Pretendard-Regular';
+            padding:5px 40px;
+            border : none;
+            font-size: 13px;
+            background-color: royalblue;
+            border-radius: 3px;
+            color:#fff;
+            float: right;
+        }
+
+        @media (max-width:768px) {
+            .login-form{
+                width: 100%;
+            }
+            .sns-login{
+                flex-direction: column;
+            }
+            .btn{
+                margin:5px 0; /*상하만 5px*/
+            }
+            .field{
+                flex-direction: column;
+            }
+            .btn-login{
+                width: 100%;
+            }
+        }
